@@ -14,5 +14,19 @@ nav.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Produto category "ver todas" toggle
+document.querySelectorAll('.produto-cat-toggle').forEach((btn) => {
+  const extraGrid = document.getElementById(btn.getAttribute('aria-controls'));
+  const label = btn.querySelector('.toggle-label');
+  if (!extraGrid || !label) return;
+
+  btn.addEventListener('click', () => {
+    const isOpen = extraGrid.hidden === false;
+    extraGrid.hidden = isOpen;
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    label.textContent = isOpen ? 'Ver todas' : 'Ver menos';
+  });
+});
+
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();

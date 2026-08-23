@@ -9,17 +9,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=9">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#topo" class="logo">Cheirinho <span>a Bolo</span></a>
+    <a href="#topo" class="logo-link"><img src="images/vc-logo.png" alt="Cheirinho a Bolo" class="logo-img"></a>
 
     <nav class="nav" id="nav">
       <a href="#sobre">Sobre</a>
       <a href="#produtos">Produtos</a>
+      <a href="#ocasioes">Ocasiões</a>
       <a href="#como-encomendar">Como Encomendar</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -55,7 +56,7 @@
         </a>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="hero-blob"></div>
+        <img class="hero-blob" src="images/logo.png" alt="Cheirinho a Bolo">
         <div class="hero-emoji hero-emoji-1">🎂</div>
         <div class="hero-emoji hero-emoji-2">🧁</div>
         <div class="hero-emoji hero-emoji-3">🥐</div>
@@ -81,118 +82,765 @@
     <div class="container">
       <p class="section-kicker center">Produtos</p>
       <h2 class="center">O que fazemos</h2>
-      <p class="section-sub center">Uma amostra do nosso trabalho. Disponibilidade e valores a combinar pelo WhatsApp.</p>
+      <p class="section-sub center">Uma amostra do nosso trabalho. Clica no título de cada secção para ver mais fotos. Disponibilidade e valores a combinar pelo WhatsApp.</p>
 
       <div class="produto-categoria">
-        <h3>🎂 Bolos de Aniversário</h3>
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-bolos-aniversario-extra">
+          <h3>🎂 Bolos de Aniversário</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
         <div class="produto-grid">
           <figure class="produto-card">
-            <!-- Substituir por: <img src="images/bolos-aniversario-1.jpg" alt="..."> -->
-            <div class="produto-card-img" aria-hidden="true">🎂</div>
-            <figcaption>Bolo tema à escolha</figcaption>
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-1.jpg" alt="Bolo de aniversário 1" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
           </figure>
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🎂</div>
-            <figcaption>Bolo infantil personalizado</figcaption>
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-2.jpg" alt="Bolo de aniversário 2" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
           </figure>
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🎂</div>
-            <figcaption>Bolo elegante para adultos</figcaption>
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-3.jpg" alt="Bolo de aniversário 3" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-4.jpg" alt="Bolo de aniversário 4" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-5.jpg" alt="Bolo de aniversário 5" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-6.jpg" alt="Bolo de aniversário 6" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-7.jpg" alt="Bolo de aniversário 7" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-8.jpg" alt="Bolo de aniversário 8" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/capa/bolos-aniversario-capa-9.jpg" alt="Bolo de aniversário 9" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-bolos-aniversario-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-1.jpg" alt="Bolo de aniversário 1" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-2.jpg" alt="Bolo de aniversário 2" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-3.jpg" alt="Bolo de aniversário 3" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-4.jpg" alt="Bolo de aniversário 4" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-5.jpg" alt="Bolo de aniversário 5" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-6.jpg" alt="Bolo de aniversário 6" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-7.jpg" alt="Bolo de aniversário 7" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-8.jpg" alt="Bolo de aniversário 8" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-9.jpg" alt="Bolo de aniversário 9" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-10.jpg" alt="Bolo de aniversário 10" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-11.jpg" alt="Bolo de aniversário 11" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-12.jpg" alt="Bolo de aniversário 12" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-13.jpg" alt="Bolo de aniversário 13" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-14.jpg" alt="Bolo de aniversário 14" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-15.jpg" alt="Bolo de aniversário 15" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-16.jpg" alt="Bolo de aniversário 16" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-17.jpg" alt="Bolo de aniversário 17" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-18.jpg" alt="Bolo de aniversário 18" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-19.jpg" alt="Bolo de aniversário 19" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-20.jpg" alt="Bolo de aniversário 20" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-21.jpg" alt="Bolo de aniversário 21" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-22.jpg" alt="Bolo de aniversário 22" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-23.jpg" alt="Bolo de aniversário 23" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-24.jpg" alt="Bolo de aniversário 24" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-25.jpg" alt="Bolo de aniversário 25" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-26.jpg" alt="Bolo de aniversário 26" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-27.jpg" alt="Bolo de aniversário 27" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-28.jpg" alt="Bolo de aniversário 28" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-29.jpg" alt="Bolo de aniversário 29" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-30.jpg" alt="Bolo de aniversário 30" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-31.jpg" alt="Bolo de aniversário 31" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-32.jpg" alt="Bolo de aniversário 32" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-33.jpg" alt="Bolo de aniversário 33" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-34.jpg" alt="Bolo de aniversário 34" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-35.jpg" alt="Bolo de aniversário 35" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-36.jpg" alt="Bolo de aniversário 36" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-37.jpg" alt="Bolo de aniversário 37" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-38.jpg" alt="Bolo de aniversário 38" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-39.jpg" alt="Bolo de aniversário 39" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-40.jpg" alt="Bolo de aniversário 40" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/bolos-aniversario/extra/bolos-aniversario-extra-41.jpg" alt="Bolo de aniversário 41" loading="lazy"></div>
+            <figcaption>Bolo personalizado</figcaption>
           </figure>
         </div>
       </div>
 
       <div class="produto-categoria">
-        <h3>💍 Casamentos</h3>
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-sobremesas-extra">
+          <h3>🍰 Sobremesas</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
         <div class="produto-grid">
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">💍</div>
-            <figcaption>Bolo de casamento clássico</figcaption>
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-1.jpg" alt="Sobremesa 1" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
           </figure>
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">💍</div>
-            <figcaption>Mesa de doces para casamento</figcaption>
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-2.jpg" alt="Sobremesa 2" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
           </figure>
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">💍</div>
-            <figcaption>Bolo cenográfico</figcaption>
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-3.jpg" alt="Sobremesa 3" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-4.jpg" alt="Sobremesa 4" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-5.jpg" alt="Sobremesa 5" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-6.jpg" alt="Sobremesa 6" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-7.jpg" alt="Sobremesa 7" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/capa/sobremesas-capa-8.jpg" alt="Sobremesa 8" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-sobremesas-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-1.jpg" alt="Sobremesa 1" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-2.jpg" alt="Sobremesa 2" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-3.jpg" alt="Sobremesa 3" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-4.jpg" alt="Sobremesa 4" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-5.jpg" alt="Sobremesa 5" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-6.jpg" alt="Sobremesa 6" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-7.jpg" alt="Sobremesa 7" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-8.jpg" alt="Sobremesa 8" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-9.jpg" alt="Sobremesa 9" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-10.jpg" alt="Sobremesa 10" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-11.jpg" alt="Sobremesa 11" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-12.jpg" alt="Sobremesa 12" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-13.jpg" alt="Sobremesa 13" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-14.jpg" alt="Sobremesa 14" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-15.jpg" alt="Sobremesa 15" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-16.jpg" alt="Sobremesa 16" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-17.jpg" alt="Sobremesa 17" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-18.jpg" alt="Sobremesa 18" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-19.jpg" alt="Sobremesa 19" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-20.jpg" alt="Sobremesa 20" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-21.jpg" alt="Sobremesa 21" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-22.jpg" alt="Sobremesa 22" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-23.jpg" alt="Sobremesa 23" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-24.jpg" alt="Sobremesa 24" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-25.jpg" alt="Sobremesa 25" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-26.jpg" alt="Sobremesa 26" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-27.jpg" alt="Sobremesa 27" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-28.jpg" alt="Sobremesa 28" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-29.jpg" alt="Sobremesa 29" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-30.jpg" alt="Sobremesa 30" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-31.jpg" alt="Sobremesa 31" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/sobremesas/extra/sobremesas-extra-32.jpg" alt="Sobremesa 32" loading="lazy"></div>
+            <figcaption>Sobremesa artesanal</figcaption>
           </figure>
         </div>
       </div>
 
       <div class="produto-categoria">
-        <h3>🕊️ Batizados</h3>
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-brigadeiros-extra">
+          <h3>🍫 Brigadeiros</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
         <div class="produto-grid">
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🕊️</div>
-            <figcaption>Bolo tema batizado</figcaption>
-          </figure>
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🕊️</div>
-            <figcaption>Docinhos para batizado</figcaption>
-          </figure>
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🕊️</div>
-            <figcaption>Bolo cenográfico batizado</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="produto-categoria">
-        <h3>🍼 Baby Shower</h3>
-        <div class="produto-grid">
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🍼</div>
-            <figcaption>Bolo revelação</figcaption>
-          </figure>
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🍼</div>
-            <figcaption>Docinhos baby shower</figcaption>
-          </figure>
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🍼</div>
-            <figcaption>Bolo temático</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="produto-categoria">
-        <h3>🧁 Cupcakes</h3>
-        <div class="produto-grid">
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🧁</div>
-            <figcaption>Cupcakes personalizados</figcaption>
-          </figure>
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🧁</div>
-            <figcaption>Caixa de cupcakes</figcaption>
-          </figure>
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🧁</div>
-            <figcaption>Cupcakes temáticos</figcaption>
-          </figure>
-        </div>
-      </div>
-
-      <div class="produto-categoria">
-        <h3>🍫 Brigadeiros</h3>
-        <div class="produto-grid">
-          <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🍫</div>
+            <div class="produto-card-img"><img src="images-web/brigadeiros/capa/brigadeiros-capa-1.jpg" alt="Brigadeiros 1" loading="lazy"></div>
             <figcaption>Brigadeiros gourmet</figcaption>
           </figure>
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🍫</div>
-            <figcaption>Brigadeiros para festas</figcaption>
+            <div class="produto-card-img"><img src="images-web/brigadeiros/capa/brigadeiros-capa-2.jpg" alt="Brigadeiros 2" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
           </figure>
           <figure class="produto-card">
-            <div class="produto-card-img" aria-hidden="true">🍫</div>
-            <figcaption>Brigadeiros personalizados</figcaption>
+            <div class="produto-card-img"><img src="images-web/brigadeiros/capa/brigadeiros-capa-3.jpg" alt="Brigadeiros 3" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-brigadeiros-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/brigadeiros/extra/brigadeiros-extra-1.jpg" alt="Brigadeiros 1" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/brigadeiros/extra/brigadeiros-extra-2.jpg" alt="Brigadeiros 2" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/brigadeiros/extra/brigadeiros-extra-3.jpg" alt="Brigadeiros 3" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/brigadeiros/extra/brigadeiros-extra-4.jpg" alt="Brigadeiros 4" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/brigadeiros/extra/brigadeiros-extra-5.jpg" alt="Brigadeiros 5" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/brigadeiros/extra/brigadeiros-extra-6.jpg" alt="Brigadeiros 6" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/brigadeiros/extra/brigadeiros-extra-7.jpg" alt="Brigadeiros 7" loading="lazy"></div>
+            <figcaption>Brigadeiros gourmet</figcaption>
           </figure>
         </div>
       </div>
 
-      <p class="menu-note">📌 Espaço de exemplo — substitui cada <code>produto-card-img</code> por <code>&lt;img src="images/..." alt="..."&gt;</code> com a foto real e ajusta a legenda.</p>
+      <div class="produto-categoria">
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-salgados-extra">
+          <h3>🥟 Salgados</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/salgados/capa/salgados-capa-1.jpg" alt="Salgados 1" loading="lazy"></div>
+            <figcaption>Salgados variados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/salgados/capa/salgados-capa-2.jpg" alt="Salgados 2" loading="lazy"></div>
+            <figcaption>Salgados variados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/salgados/capa/salgados-capa-3.jpg" alt="Salgados 3" loading="lazy"></div>
+            <figcaption>Salgados variados</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-salgados-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/salgados/extra/salgados-extra-1.jpg" alt="Salgados 1" loading="lazy"></div>
+            <figcaption>Salgados variados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/salgados/extra/salgados-extra-2.jpg" alt="Salgados 2" loading="lazy"></div>
+            <figcaption>Salgados variados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/salgados/extra/salgados-extra-3.jpg" alt="Salgados 3" loading="lazy"></div>
+            <figcaption>Salgados variados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/salgados/extra/salgados-extra-4.jpg" alt="Salgados 4" loading="lazy"></div>
+            <figcaption>Salgados variados</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <h3>🍽️ Refeições</h3>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/refeicoes/capa/refeicoes-capa-1.jpg" alt="Refeição 1" loading="lazy"></div>
+            <figcaption>Refeição caseira</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/refeicoes/capa/refeicoes-capa-2.jpg" alt="Refeição 2" loading="lazy"></div>
+            <figcaption>Refeição caseira</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/refeicoes/capa/refeicoes-capa-3.jpg" alt="Refeição 3" loading="lazy"></div>
+            <figcaption>Refeição caseira</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <h3>📦 Boxes</h3>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/boxes/capa/boxes-capa-1.jpg" alt="Caixa para bolo 1" loading="lazy"></div>
+            <figcaption>Embalagem cuidada</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/boxes/capa/boxes-capa-2.jpg" alt="Caixa para bolo 2" loading="lazy"></div>
+            <figcaption>Embalagem cuidada</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <p class="menu-note">📌 Legendas de exemplo — edita o texto de cada <code>figcaption</code> em <code>index.html</code> para descrever cada foto.</p>
+    </div>
+  </section>
+
+  <!-- OCASIOES -->
+  <section class="produtos produtos-ocasioes" id="ocasioes">
+    <div class="container">
+      <p class="section-kicker center">Ocasiões Especiais</p>
+      <h2 class="center">Datas para celebrar</h2>
+      <p class="section-sub center">Criações temáticas para as datas mais especiais do ano. Clica no título de cada secção para ver mais fotos.</p>
+
+      <div class="produto-categoria">
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-pascoa-extra">
+          <h3>🐣 Páscoa</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/pascoa/capa/pascoa-capa-1.jpg" alt="Páscoa 1" loading="lazy"></div>
+            <figcaption>Especial de Páscoa</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/pascoa/capa/pascoa-capa-2.jpg" alt="Páscoa 2" loading="lazy"></div>
+            <figcaption>Especial de Páscoa</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/pascoa/capa/pascoa-capa-3.jpg" alt="Páscoa 3" loading="lazy"></div>
+            <figcaption>Especial de Páscoa</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-pascoa-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/pascoa/extra/pascoa-extra-1.jpg" alt="Páscoa 1" loading="lazy"></div>
+            <figcaption>Especial de Páscoa</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/pascoa/extra/pascoa-extra-2.jpg" alt="Páscoa 2" loading="lazy"></div>
+            <figcaption>Especial de Páscoa</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/pascoa/extra/pascoa-extra-3.jpg" alt="Páscoa 3" loading="lazy"></div>
+            <figcaption>Especial de Páscoa</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-natal-extra">
+          <h3>🎄 Natal</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/capa/natal-capa-1.jpg" alt="Natal 1" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/capa/natal-capa-2.jpg" alt="Natal 2" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/capa/natal-capa-3.jpg" alt="Natal 3" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-natal-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-1.jpg" alt="Natal 1" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-2.jpg" alt="Natal 2" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-3.jpg" alt="Natal 3" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-4.jpg" alt="Natal 4" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-5.jpg" alt="Natal 5" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-6.jpg" alt="Natal 6" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-7.jpg" alt="Natal 7" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-8.jpg" alt="Natal 8" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-9.jpg" alt="Natal 9" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-10.jpg" alt="Natal 10" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-11.jpg" alt="Natal 11" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/natal/extra/natal-extra-12.jpg" alt="Natal 12" loading="lazy"></div>
+            <figcaption>Especial de Natal</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <h3>💐 Dia da Mãe</h3>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-da-mae/capa/dia-da-mae-capa-1.jpg" alt="Dia da Mãe 1" loading="lazy"></div>
+            <figcaption>Especial Dia da Mãe</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-da-mae/capa/dia-da-mae-capa-2.jpg" alt="Dia da Mãe 2" loading="lazy"></div>
+            <figcaption>Especial Dia da Mãe</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-dia-do-pai-extra">
+          <h3>👔 Dia do Pai</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-do-pai/capa/dia-do-pai-capa-1.jpg" alt="Dia do Pai 1" loading="lazy"></div>
+            <figcaption>Especial Dia do Pai</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-do-pai/capa/dia-do-pai-capa-2.jpg" alt="Dia do Pai 2" loading="lazy"></div>
+            <figcaption>Especial Dia do Pai</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-do-pai/capa/dia-do-pai-capa-3.jpg" alt="Dia do Pai 3" loading="lazy"></div>
+            <figcaption>Especial Dia do Pai</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-dia-do-pai-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-do-pai/extra/dia-do-pai-extra-1.jpg" alt="Dia do Pai 1" loading="lazy"></div>
+            <figcaption>Especial Dia do Pai</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <h3>🧒 Dia da Criança</h3>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-da-crianca/capa/dia-da-crianca-capa-1.jpg" alt="Dia da Criança 1" loading="lazy"></div>
+            <figcaption>Especial Dia da Criança</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-da-crianca/capa/dia-da-crianca-capa-2.jpg" alt="Dia da Criança 2" loading="lazy"></div>
+            <figcaption>Especial Dia da Criança</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-dia-dos-namorados-extra">
+          <h3>❤️ Dia dos Namorados</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/capa/dia-dos-namorados-capa-1.jpg" alt="Dia dos Namorados 1" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/capa/dia-dos-namorados-capa-2.jpg" alt="Dia dos Namorados 2" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/capa/dia-dos-namorados-capa-3.jpg" alt="Dia dos Namorados 3" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-dia-dos-namorados-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/extra/dia-dos-namorados-extra-1.jpg" alt="Dia dos Namorados 1" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/extra/dia-dos-namorados-extra-2.jpg" alt="Dia dos Namorados 2" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/extra/dia-dos-namorados-extra-3.jpg" alt="Dia dos Namorados 3" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/extra/dia-dos-namorados-extra-4.jpg" alt="Dia dos Namorados 4" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/extra/dia-dos-namorados-extra-5.jpg" alt="Dia dos Namorados 5" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/dia-dos-namorados/extra/dia-dos-namorados-extra-6.jpg" alt="Dia dos Namorados 6" loading="lazy"></div>
+            <figcaption>Especial Dia dos Namorados</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="produto-categoria">
+        <button class="produto-cat-toggle" type="button" aria-expanded="false" aria-controls="grid-cha-revelacao-extra">
+          <h3>🍼 Chá Revelação</h3>
+          <span class="toggle-hint"><span class="toggle-label">Ver todas</span> <span class="chevron">▾</span></span>
+        </button>
+        <div class="produto-grid">
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/cha-revelacao/capa/cha-revelacao-capa-1.jpg" alt="Chá Revelação 1" loading="lazy"></div>
+            <figcaption>Chá revelação</figcaption>
+          </figure>
+        </div>
+        <div class="produto-grid produto-grid-extra" id="grid-cha-revelacao-extra" hidden>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/cha-revelacao/extra/cha-revelacao-extra-1.jpg" alt="Chá Revelação 1" loading="lazy"></div>
+            <figcaption>Chá revelação</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/cha-revelacao/extra/cha-revelacao-extra-2.jpg" alt="Chá Revelação 2" loading="lazy"></div>
+            <figcaption>Chá revelação</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/cha-revelacao/extra/cha-revelacao-extra-3.jpg" alt="Chá Revelação 3" loading="lazy"></div>
+            <figcaption>Chá revelação</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/cha-revelacao/extra/cha-revelacao-extra-4.jpg" alt="Chá Revelação 4" loading="lazy"></div>
+            <figcaption>Chá revelação</figcaption>
+          </figure>
+          <figure class="produto-card">
+            <div class="produto-card-img"><img src="images-web/cha-revelacao/extra/cha-revelacao-extra-5.jpg" alt="Chá Revelação 5" loading="lazy"></div>
+            <figcaption>Chá revelação</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -233,7 +881,7 @@
 <footer class="site-footer" id="contacto">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <p class="logo">Cheirinho <span>a Bolo</span></p>
+      <img src="images/logo.png" alt="Cheirinho a Bolo" class="footer-logo-img">
       <p>Bolos e salgados artesanais, feitos com carinho.</p>
     </div>
 
@@ -246,6 +894,6 @@
   <p class="footer-bottom">© <span id="year"></span> Cheirinho a Bolo.</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/script.js?v=2"></script>
 </body>
 </html>

@@ -28,5 +28,33 @@ document.querySelectorAll('.produto-cat-toggle').forEach((btn) => {
   });
 });
 
+// Lightbox for produto photos
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+function openLightbox(src, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || '';
+  lightbox.hidden = false;
+}
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  lightboxImg.src = '';
+}
+
+document.querySelectorAll('.produto-card-img img').forEach((img) => {
+  img.addEventListener('click', () => openLightbox(img.src, img.alt));
+});
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+});
+
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();

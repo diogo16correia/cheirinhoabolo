@@ -165,10 +165,10 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .hero-kicker {
@@ -189,13 +189,14 @@ img { max-width: 100%; display: block; }
 .hero-sub {
   font-size: 1.05rem;
   color: var(--brown-light);
-  margin-bottom: 26px;
+  margin: 0 auto 26px;
   max-width: 480px;
 }
 
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 16px;
   margin-bottom: 22px;
 }
@@ -254,17 +255,6 @@ img { max-width: 100%; display: block; }
   align-items: center;
 }
 
-.sobre-placeholder {
-  background: var(--pink);
-  border-radius: var(--radius);
-  aspect-ratio: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6rem;
-  box-shadow: var(--shadow);
-}
-
 .section-kicker {
   font-weight: 700;
   color: var(--pink-dark);
@@ -302,6 +292,15 @@ img { max-width: 100%; display: block; }
 .produto-categoria h3 {
   font-size: 1.2rem;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.categoria-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .produto-cat-toggle {
@@ -507,8 +506,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .hero-inner, .sobre-inner { grid-template-columns: 1fr; }
-  .sobre-placeholder { width: 220px; margin: 0 auto; }
+  .sobre-inner { grid-template-columns: 1fr; }
   .produto-grid { grid-template-columns: repeat(2, 1fr); }
   .passos-grid { grid-template-columns: 1fr; }
 }

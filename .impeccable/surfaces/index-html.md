@@ -16,7 +16,7 @@ THESIS: O site é uma festa a ser montada: cada secção é uma folha inteira de
 
 OWN-WORLD: Blocos de cor inteira por secção (rosa-chiclete hero, creme-baunilha sobre, framboesa nos Menus como cor de alarme reservada, chocolate nos produtos, menta nas ocasiões, rosa claro em encomendar, castanho no rodapé). Bordas recortadas em festão (scallop) entre secções, bandeirolas SVG, confettis como padrão. Display Shrikhand, corpo Quicksand. Cartões de menu como bilhetes/convites com picotado.
 
-STORY: Percebe-se logo que é pastelaria caseira para festas; vê menus com preço fixo para N pessoas; vê fotos reais; toca no WhatsApp.
+STORY: Percebe-se logo que é pastelaria caseira para festas; vê menus para N pessoas (preço combina-se no WhatsApp); vê fotos reais; toca no WhatsApp.
 
 FIRST VIEWPORT: Cabeçalho da marca; hero rosa-chiclete a toda a largura com fio de bandeirolas a atravessar no topo, título Shrikhand grande centrado, subtítulo, botão WhatsApp e chip Instagram; confettis a cair devagar; borda em festão a revelar a secção seguinte.
 

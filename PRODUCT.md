@@ -14,7 +14,7 @@ web
 Chegam muitas vezes pelo telemóvel (Instagram, WhatsApp, partilhas).
 
 ## Product Purpose
-Site de apresentação do Cheirinho a Bolo, pastelaria caseira por encomenda (desde fevereiro de 2022). Mostra trabalhos, menus de festa com preços e leva o visitante a encomendar pelo WhatsApp. Sucesso = o visitante escolhe e abre a conversa no WhatsApp.
+Site de apresentação do Cheirinho a Bolo, pastelaria caseira por encomenda (desde fevereiro de 2022). Mostra trabalhos, menus de festa e leva o visitante a encomendar pelo WhatsApp. Sucesso = o visitante escolhe e abre a conversa no WhatsApp.
 
 ## Positioning
 Caseiro e feito à mão, bolos personalizados ao tema de cada festa, e tudo num só sítio (bolos, salgados e menus completos) a preço acessível para famílias.
@@ -22,7 +22,7 @@ Caseiro e feito à mão, bolos personalizados ao tema de cada festa, e tudo num 
 ## Operating Context
 - Encomendas apenas via WhatsApp (+351 939 523 329); sem loja online nem pagamentos no site.
 - Instagram: @_cheirinho.a.bolo_.
-- Menus 1–5 com preço fixo para ±10 a ±30 pessoas.
+- Menus 1–5 para ±10 a ±30 pessoas; preços não aparecem no site (combinam-se pelo WhatsApp).
 
 ## Capabilities and Constraints
 - Site estático: index.html, css/style.css, js/script.js, sem build.
@@ -35,7 +35,7 @@ Caseiro e feito à mão, bolos personalizados ao tema de cada festa, e tudo num 
 
 ## Evidence on Hand
 - Fotos reais de produtos em images-web/ por categoria e ocasião.
-- Menus e preços reais (secção Menus).
+- Menus reais com quantidades (secção Menus); preços não publicados.
 - Sem testemunhos, avaliações ou números de clientes: não inventar.
 
 ## Product Principles

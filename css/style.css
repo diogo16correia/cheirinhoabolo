@@ -514,18 +514,13 @@ img { max-width: 100%; display: block; }
 }
 
 /* Picotado do bilhete, com os recortes na cor da secção */
-.menu-preco {
+.menu-picotado {
   position: relative;
-  margin: 20px -24px 18px;
-  padding: 16px 24px 0;
+  margin: 22px -24px 20px;
   border-top: 2px dashed rgba(194, 24, 91, 0.35);
-  font-family: var(--display);
-  font-size: 2.3rem;
-  line-height: 1;
-  color: var(--brown);
 }
-.menu-preco::before,
-.menu-preco::after {
+.menu-picotado::before,
+.menu-picotado::after {
   content: '';
   position: absolute;
   top: -12px;
@@ -534,8 +529,8 @@ img { max-width: 100%; display: block; }
   border-radius: 50%;
   background: var(--framboesa);
 }
-.menu-preco::before { left: -11px; }
-.menu-preco::after { right: -11px; }
+.menu-picotado::before { left: -11px; }
+.menu-picotado::after { right: -11px; }
 
 .menu-card .btn { align-self: flex-start; }
 

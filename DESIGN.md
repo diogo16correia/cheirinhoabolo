@@ -51,7 +51,7 @@ typography:
     letterSpacing: "0.005em"
   numeral:
     fontFamily: "Shrikhand, Quicksand, cursive"
-    fontSize: "2.3rem"
+    fontSize: "4.5rem"
     fontWeight: 400
     lineHeight: 1
   title-display:
@@ -205,7 +205,7 @@ Dentro da folha menta das Ocasiões, cada data é uma faixa a toda a largura com
 ### Hierarchy
 - **Display** (Shrikhand 400, clamp(2.5rem, 6.4vw, 4.8rem), 1.05): só o título do hero, centrado, max 14ch.
 - **Headline** (Shrikhand 400, clamp(2.1rem, 4.6vw, 3.3rem), 1.1): títulos de secção; em "Sobre" desce para clamp(1.9rem, 3.6vw, 2.7rem) por estar em coluna.
-- **Numeral** (Shrikhand 400, 2.3rem, 1): preço no bilhete; os numerais dos passos usam a mesma face a 4.5rem.
+- **Numeral** (Shrikhand 400, 4.5rem, 1): numerais dos passos em "Como encomendar". Os menus não mostram preço.
 - **Title Display** (Shrikhand 400, 1.7rem, 1): nome do menu no bilhete, em framboesa.
 - **Title** (Quicksand 700, 1.3rem): categorias de produtos e títulos dos passos.
 - **Body** (Quicksand 400, 1rem, 1.6): texto corrido, max 60ch; listas dos menus a 0.95rem/500 com quantidades em tabular-nums 700.
@@ -215,7 +215,7 @@ Dentro da folha menta das Ocasiões, cada data é uma faixa a toda a largura com
 ### Named Rules
 **The Shrikhand Só Grita Rule.** Shrikhand é para títulos de secção, o título do hero, nomes de menu e numerais. Nunca para parágrafos, chips, navegação ou botões.
 
-**The Números de Festa Rule.** Preços e números de passo são Shrikhand grande; quantidades em listas são Quicksand 700 com algarismos tabulares, alinhadas à direita.
+**The Números de Festa Rule.** Números de passo são Shrikhand grande; quantidades em listas são Quicksand 700 com algarismos tabulares, alinhadas à direita.
 
 ## Layout
 
@@ -242,7 +242,7 @@ A profundidade vem da sobreposição física do papel: o festão de cada folha c
 
 ## Shapes
 
-Formas de papelaria de festa: cantos redondos generosos (card, 18px) em bilhetes e fotos (12px nas fotos em móvel), pílulas totalmente redondas (pill) em todos os botões e chips, círculos para o logótipo. As fronteiras entre secções são festões de semicírculos (raio 22px, 14px em móvel) desenhados com a cor da folha de cima. As bandeirolas são triângulos invertidos pendurados de uma curva quadrática. O bilhete de menu tem uma linha picotada tracejada antes do preço com dois recortes circulares de 22px nas pontas, pintados na cor da secção. Separadores de categoria são linhas pontilhadas de 2px a 30% da tinta.
+Formas de papelaria de festa: cantos redondos generosos (card, 18px) em bilhetes e fotos (12px nas fotos em móvel), pílulas totalmente redondas (pill) em todos os botões e chips, círculos para o logótipo. As fronteiras entre secções são festões de semicírculos (raio 22px, 14px em móvel) desenhados com a cor da folha de cima. As bandeirolas são triângulos invertidos pendurados de uma curva quadrática. O bilhete de menu tem uma linha picotada tracejada antes do botão com dois recortes circulares de 22px nas pontas, pintados na cor da secção. Separadores de categoria são linhas pontilhadas de 2px a 30% da tinta.
 
 ## Components
 
@@ -259,7 +259,7 @@ Redondos, sólidos, verdes; dizem sempre "WhatsApp".
 - **Ver todas / Ver menos:** pílula chiclete com chevron SVG que roda 180° quando aberto; em hover passa a branco (na folha menta o par inverte-se: branco em repouso, chiclete em hover).
 
 ### Cards / Containers
-- **Bilhete de menu:** papel-bilhete, canto card, sombra Bilhete, cabeçalho com nome em Shrikhand framboesa e chip de pessoas, listas com quantidades, separador fino antes dos doces, picotado com recortes antes do preço Shrikhand, botão pequeno alinhado à esquerda. Hover: sobe 4px e inclina 0.6° (alternando o sentido entre pares e ímpares).
+- **Bilhete de menu:** papel-bilhete, canto card, sombra Bilhete, cabeçalho com nome em Shrikhand framboesa e chip de pessoas, listas com quantidades, separador fino antes dos doces, picotado com recortes, botão pequeno alinhado à esquerda. Hover: sobe 4px e inclina 0.6° (alternando o sentido entre pares e ímpares).
 - **Foto de produto:** moldura 4:3 com canto card, fundo de espera a 12% da tinta sobre a folha, sombra tingida; a imagem aproxima 1.05 em hover (0.6s) e abre lightbox.
 
 ### Navigation

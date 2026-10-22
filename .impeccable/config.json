@@ -1,0 +1,62 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "css/style.css"
+        ],
+        "createdAt": "2026-10-21T17:00:22.539Z",
+        "reason": "agent: .confettis uses tiled radial-gradient dots (confetti), not grid lines"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T17:00:23.115Z",
+        "reason": "agent: sections have 88px+ vertical padding and footer-inner 32px padding-bottom via CSS calc(); static detector misreads"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T17:00:29.411Z",
+        "reason": "user confirmed: kept palette rosa/creme/castanho (PRODUCT.md brand commitment); creme is one of seven section colours"
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T17:00:59.817Z",
+        "reason": "agent: only img without src is the hidden lightbox (#lightboxImg), filled by JS on open"
+      },
+      {
+        "rule": "ai-color-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-21T17:30:49.766Z",
+        "reason": "user asked for per-date themes: Chá Revelação lilac band uses a violet ink by subject"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "css/style.css"
+        ],
+        "createdAt": "2026-10-21T17:40:16.001Z",
+        "reason": "user asked for patterned (non-flat) backgrounds: Menus gift-wrap stripes and Passos gingham are the authored party-paper prints"
+      }
+    ]
+  }
+}

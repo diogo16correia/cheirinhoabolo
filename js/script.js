@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const nav = document.getElementById('nav');
@@ -41,7 +43,7 @@ function openLightbox(src, alt) {
 
 function closeLightbox() {
   lightbox.hidden = true;
-  lightboxImg.src = '';
+  lightboxImg.removeAttribute('src');
 }
 
 document.querySelectorAll('.produto-card-img img').forEach((img) => {
@@ -55,6 +57,61 @@ lightbox.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
 });
+
+// Active nav link follows the section in view
+const navLinks = new Map(
+  [...nav.querySelectorAll('a[href^="#"]')].map((link) => [link.getAttribute('href').slice(1), link])
+);
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const link = navLinks.get(entry.target.id);
+    if (link) link.classList.toggle('ativo', entry.isIntersecting);
+  });
+}, { rootMargin: '-45% 0px -50% 0px' });
+
+document.querySelectorAll('.secao').forEach((section) => sectionObserver.observe(section));
+
+// Bunting drops in when "Como encomendar" scrolls into view
+const passos = document.querySelector('.passos');
+const passosObserver = new IntersectionObserver(([entry]) => {
+  if (!entry.isIntersecting) return;
+  passos.classList.add('visivel');
+  passosObserver.disconnect();
+}, { threshold: 0.1 });
+passosObserver.observe(passos);
+
+// Each section lands with the previous section's colour and settles into its own as it enters
+const sections = [...document.querySelectorAll('.secao')];
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+if (!reduceMotion) {
+  const arrivalObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) entry.target.classList.add('chegou');
+      // Leaving past the bottom edge resets it, so scrolling back down plays it again
+      else if (entry.boundingClientRect.top > 0) entry.target.classList.remove('chegou');
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
+
+  sections.forEach((section) => arrivalObserver.observe(section));
+
+  // Photos step in one after another when their grid scrolls into view
+  const gridObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visivel');
+      gridObserver.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll('.produto-grid').forEach((grid) => {
+    grid.querySelectorAll('.produto-card').forEach((card, i) => card.style.setProperty('--n', i));
+    gridObserver.observe(grid);
+  });
+
+  document.documentElement.classList.add('chegada');
+}
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();

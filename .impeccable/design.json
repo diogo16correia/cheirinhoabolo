@@ -1,0 +1,594 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-21T17:19:18.179462+00:00",
+  "title": "Design System: Cheirinho a Bolo",
+  "extensions": {
+    "colorMeta": {
+      "framboesa": {
+        "role": "primary",
+        "displayName": "Framboesa",
+        "canonical": "#c2185b",
+        "tonalRamp": [
+          "#440820",
+          "#780f38",
+          "#ac1551",
+          "#e01c69",
+          "#e94d8a",
+          "#ef81ac",
+          "#f6b4ce",
+          "#fce8f0"
+        ]
+      },
+      "whatsapp": {
+        "role": "primary",
+        "displayName": "Verde WhatsApp",
+        "canonical": "#147a3f",
+        "tonalRamp": [
+          "#0b4222",
+          "#13743c",
+          "#1ba656",
+          "#23d870",
+          "#53e390",
+          "#85ebb0",
+          "#b7f3d0",
+          "#e9fbf1"
+        ]
+      },
+      "whatsapp-dark": {
+        "role": "primary",
+        "displayName": "Verde WhatsApp Escuro",
+        "canonical": "#0f6232",
+        "tonalRamp": [
+          "#0a4222",
+          "#12753c",
+          "#1aa755",
+          "#21da6f",
+          "#51e48f",
+          "#84ecb0",
+          "#b6f4d0",
+          "#e9fcf1"
+        ]
+      },
+      "chiclete": {
+        "role": "secondary",
+        "displayName": "Rosa-Chiclete",
+        "canonical": "#f7c6d0",
+        "tonalRamp": [
+          "#430915",
+          "#761125",
+          "#a91835",
+          "#dc1f46",
+          "#e64f6e",
+          "#ee8298",
+          "#f5b6c2",
+          "#fce9ed"
+        ]
+      },
+      "chocolate": {
+        "role": "secondary",
+        "displayName": "Chocolate",
+        "canonical": "#4a2a1a",
+        "tonalRamp": [
+          "#392014",
+          "#643923",
+          "#8f5132",
+          "#ba6a41",
+          "#cb8b6b",
+          "#daad96",
+          "#e9cec1",
+          "#f8f0ec"
+        ]
+      },
+      "chocolate-ink-soft": {
+        "role": "secondary",
+        "displayName": "Tinta Suave sobre Chocolate",
+        "canonical": "#f1d6c4",
+        "tonalRamp": [
+          "#3e220f",
+          "#6d3b1a",
+          "#9c5525",
+          "#cb6e30",
+          "#d98e5d",
+          "#e4af8c",
+          "#efd0bb",
+          "#faf1ea"
+        ]
+      },
+      "menta": {
+        "role": "secondary",
+        "displayName": "Menta",
+        "canonical": "#cfeee0",
+        "tonalRamp": [
+          "#143828",
+          "#236447",
+          "#328f65",
+          "#42ba83",
+          "#6bcb9f",
+          "#96dabb",
+          "#c1e9d7",
+          "#ecf8f3"
+        ]
+      },
+      "menta-ink": {
+        "role": "secondary",
+        "displayName": "Tinta Menta",
+        "canonical": "#22473a",
+        "tonalRamp": [
+          "#19342a",
+          "#2c5b4a",
+          "#3f836b",
+          "#51aa8b",
+          "#78bea5",
+          "#9fd1bf",
+          "#c6e4d9",
+          "#eef7f4"
+        ]
+      },
+      "menta-ink-soft": {
+        "role": "secondary",
+        "displayName": "Tinta Menta Suave",
+        "canonical": "#2f5a4a",
+        "tonalRamp": [
+          "#1a3229",
+          "#2e5949",
+          "#427f68",
+          "#56a588",
+          "#7bbaa3",
+          "#a2cebe",
+          "#c8e2d8",
+          "#eef6f3"
+        ]
+      },
+      "algodao": {
+        "role": "secondary",
+        "displayName": "Rosa Algodão",
+        "canonical": "#fde3ea",
+        "tonalRamp": [
+          "#470517",
+          "#7e0928",
+          "#b40d3a",
+          "#eb114b",
+          "#f24473",
+          "#f67a9c",
+          "#f9b1c4",
+          "#fde7ed"
+        ]
+      },
+      "framboesa-soft": {
+        "role": "secondary",
+        "displayName": "Tinta Suave sobre Framboesa",
+        "canonical": "#ffe1ec",
+        "tonalRamp": [
+          "#4c001c",
+          "#870031",
+          "#c10047",
+          "#fb005c",
+          "#ff3780",
+          "#ff71a5",
+          "#ffabca",
+          "#ffe6ef"
+        ]
+      },
+      "amarelo": {
+        "role": "tertiary",
+        "displayName": "Amarelo Festa",
+        "canonical": "#f2b134",
+        "tonalRamp": [
+          "#483105",
+          "#7f5608",
+          "#b57b0c",
+          "#eca10f",
+          "#f3b743",
+          "#f6cc79",
+          "#fae1b0",
+          "#fdf6e7"
+        ]
+      },
+      "verde-menta": {
+        "role": "tertiary",
+        "displayName": "Verde-Menta",
+        "canonical": "#9ed9c4",
+        "tonalRamp": [
+          "#16372b",
+          "#26614c",
+          "#368b6d",
+          "#47b58e",
+          "#6fc7a7",
+          "#99d7c1",
+          "#c3e7da",
+          "#edf8f4"
+        ]
+      },
+      "bandeira-rosa": {
+        "role": "tertiary",
+        "displayName": "Rosa Bandeira",
+        "canonical": "#d6336c",
+        "tonalRamp": [
+          "#400d1f",
+          "#701736",
+          "#a1204d",
+          "#d12a65",
+          "#dd5887",
+          "#e789aa",
+          "#f1b9cd",
+          "#fbeaf0"
+        ]
+      },
+      "baunilha": {
+        "role": "neutral",
+        "displayName": "Creme Baunilha",
+        "canonical": "#fff1df",
+        "tonalRamp": [
+          "#4c2b00",
+          "#874c00",
+          "#c16d00",
+          "#fb8d00",
+          "#ffa737",
+          "#ffc171",
+          "#ffdaab",
+          "#fff4e6"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Creme da Marca",
+        "canonical": "#fff8f0",
+        "tonalRamp": [
+          "#4c2900",
+          "#874800",
+          "#c16700",
+          "#fb8600",
+          "#ffa237",
+          "#ffbd71",
+          "#ffd8ab",
+          "#fff3e6"
+        ]
+      },
+      "papel-bilhete": {
+        "role": "neutral",
+        "displayName": "Papel Bilhete",
+        "canonical": "#fffaf3",
+        "tonalRamp": [
+          "#4c2d00",
+          "#874f00",
+          "#c17100",
+          "#fb9300",
+          "#ffac37",
+          "#ffc471",
+          "#ffdcab",
+          "#fff4e6"
+        ]
+      },
+      "brown": {
+        "role": "neutral",
+        "displayName": "Castanho da Marca",
+        "canonical": "#5a3420",
+        "tonalRamp": [
+          "#382114",
+          "#633923",
+          "#8e5233",
+          "#b96b42",
+          "#ca8c6b",
+          "#daad96",
+          "#e9cfc1",
+          "#f8f0ec"
+        ]
+      },
+      "brown-soft": {
+        "role": "neutral",
+        "displayName": "Castanho Suave",
+        "canonical": "#7a4c33",
+        "tonalRamp": [
+          "#362217",
+          "#5f3b28",
+          "#885539",
+          "#b16e4a",
+          "#c48f72",
+          "#d5af9b",
+          "#e6d0c4",
+          "#f7f1ed"
+        ]
+      },
+      "brown-deep": {
+        "role": "neutral",
+        "displayName": "Castanho Profundo",
+        "canonical": "#3b2216",
+        "tonalRamp": [
+          "#382015",
+          "#623925",
+          "#8d5134",
+          "#b76a44",
+          "#c98b6d",
+          "#d8ad98",
+          "#e8cec2",
+          "#f8f0ec"
+        ]
+      },
+      "pink": {
+        "role": "neutral",
+        "displayName": "Rosa da Marca",
+        "canonical": "#f7c6d0",
+        "tonalRamp": [
+          "#430915",
+          "#761125",
+          "#a91835",
+          "#dc1f46",
+          "#e64f6e",
+          "#ee8298",
+          "#f5b6c2",
+          "#fce9ed"
+        ]
+      },
+      "pink-dark": {
+        "role": "neutral",
+        "displayName": "Rosa da Marca Escuro",
+        "canonical": "#e79aac",
+        "tonalRamp": [
+          "#3e0f1a",
+          "#6d1a2d",
+          "#9c2541",
+          "#cb3054",
+          "#d95d7a",
+          "#e48ca1",
+          "#efbbc7",
+          "#faeaee"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Só o título do hero, centrado, max 14ch."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Títulos de secção."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Preço no bilhete; numerais dos passos a 4.5rem."
+      },
+      "title-display": {
+        "displayName": "Title Display",
+        "purpose": "Nome do menu no bilhete, em framboesa."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Categorias de produtos e títulos dos passos."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Texto corrido, max 60ch."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Subtítulos de secção e do hero."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Chips e botão pequeno."
+      }
+    },
+    "shadows": [
+      {
+        "name": "bilhete",
+        "value": "0 14px 30px rgba(70, 8, 34, 0.28)",
+        "purpose": "Bilhetes de menu sobre framboesa."
+      },
+      {
+        "name": "foto-chocolate",
+        "value": "0 14px 30px rgba(20, 8, 2, 0.3)",
+        "purpose": "Fotos de produto na folha chocolate."
+      },
+      {
+        "name": "foto-menta",
+        "value": "0 14px 30px rgba(20, 70, 52, 0.22)",
+        "purpose": "Fotos de produto na folha menta."
+      },
+      {
+        "name": "whatsapp",
+        "value": "0 8px 20px rgba(20, 122, 63, 0.3)",
+        "purpose": "Halo do botão WhatsApp em repouso."
+      },
+      {
+        "name": "whatsapp-hover",
+        "value": "0 12px 26px rgba(20, 122, 63, 0.35)",
+        "purpose": "Halo do botão WhatsApp em hover."
+      },
+      {
+        "name": "chip-claro",
+        "value": "0 8px 20px rgba(90, 52, 32, 0.14)",
+        "purpose": "Chip Instagram e gaveta da navegação móvel."
+      },
+      {
+        "name": "aro-logotipo",
+        "value": "0 0 0 10px #f7c6d0, 0 18px 40px rgba(90, 52, 32, 0.2)",
+        "purpose": "Logótipo redondo com aro chiclete."
+      },
+      {
+        "name": "bandeirola",
+        "value": "drop-shadow(0 4px 3px rgba(90, 52, 32, 0.18))",
+        "purpose": "Filtro em cada flâmula."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-festa",
+        "value": "cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "purpose": "Curva de todo o movimento: botões, nav, bilhetes, fotos, chegada de folha, bandeirolas."
+      },
+      {
+        "name": "duration-press",
+        "value": "0.2s",
+        "purpose": "Hover e press de botões e chips."
+      },
+      {
+        "name": "duration-nav",
+        "value": "0.35s",
+        "purpose": "Sublinhado da navegação."
+      },
+      {
+        "name": "duration-chegada",
+        "value": "0.9s",
+        "purpose": "Folha assenta na sua cor; festão desce; flâmula desdobra."
+      },
+      {
+        "name": "stagger-bandeirola",
+        "value": "55ms",
+        "purpose": "Desfasamento entre flâmulas."
+      },
+      {
+        "name": "balanco",
+        "value": "5s ease-in-out infinite, ±3deg",
+        "purpose": "Baloiço das bandeirolas."
+      },
+      {
+        "name": "confettis",
+        "value": "26s / 44s linear infinite",
+        "purpose": "Queda das duas camadas de confettis."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "grelhas",
+        "value": "860px"
+      },
+      {
+        "name": "movel",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Botão WhatsApp",
+      "kind": "button",
+      "refersTo": "button-whatsapp",
+      "description": "Única ação primária: encomendar pelo WhatsApp.",
+      "html": "<a class=\"ds-btn-whatsapp\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M8 9c0 4 3 7 7 7l1.5-1.5-2-1-1 1c-1.5-.5-3-2-3.5-3.5l1-1-1-2L8.5 9z\" fill=\"currentColor\"/></svg> Encomendar no WhatsApp</a>",
+      "css": ".ds-btn-whatsapp{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:999px;border:2px solid transparent;font-family:'Quicksand',sans-serif;font-weight:700;font-size:1rem;color:#fff;text-decoration:none;background:#147a3f;box-shadow:0 8px 20px rgba(20,122,63,.3);transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s ease,background .2s ease}.ds-btn-whatsapp:hover{transform:translateY(-2px);background:#0f6232;box-shadow:0 12px 26px rgba(20,122,63,.35)}.ds-btn-whatsapp:active{transform:translateY(0) scale(.98)}.ds-btn-whatsapp:focus-visible{outline:3px solid #c2185b;outline-offset:3px}"
+    },
+    {
+      "name": "Botão WhatsApp pequeno",
+      "kind": "button",
+      "refersTo": "button-whatsapp-small",
+      "description": "Cabeçalho e bilhetes de menu.",
+      "html": "<a class=\"ds-btn-whatsapp-sm\" href=\"#\">Encomendar</a>",
+      "css": ".ds-btn-whatsapp-sm{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:999px;font-family:'Quicksand',sans-serif;font-weight:700;font-size:.85rem;color:#fff;text-decoration:none;background:#147a3f;box-shadow:0 8px 20px rgba(20,122,63,.3);transition:transform .2s cubic-bezier(.2,.8,.2,1),background .2s ease}.ds-btn-whatsapp-sm:hover{transform:translateY(-2px);background:#0f6232}.ds-btn-whatsapp-sm:focus-visible{outline:3px solid #c2185b;outline-offset:3px}"
+    },
+    {
+      "name": "Chip Instagram",
+      "kind": "chip",
+      "refersTo": "chip-instagram",
+      "description": "Ligação secundária ao Instagram, ao lado do botão principal.",
+      "html": "<a class=\"ds-chip-ig\" href=\"#\">@_cheirinho.a.bolo_</a>",
+      "css": ".ds-chip-ig{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-family:'Quicksand',sans-serif;font-weight:700;color:#5a3420;background:#fff1df;text-decoration:none;box-shadow:0 8px 20px rgba(90,52,32,.14);transition:transform .2s cubic-bezier(.2,.8,.2,1)}.ds-chip-ig:hover{transform:translateY(-2px)}.ds-chip-ig:focus-visible{outline:3px solid #c2185b;outline-offset:3px}"
+    },
+    {
+      "name": "Chip Ver todas",
+      "kind": "chip",
+      "refersTo": "chip-ver-todas",
+      "description": "Abre as fotos extra de uma categoria.",
+      "html": "<button class=\"ds-chip-ver\" aria-expanded=\"false\">Ver todas <svg class=\"ds-chev\" width=\"12\" height=\"12\" viewBox=\"0 0 12 12\" aria-hidden=\"true\"><path d=\"M2.5 4.5 6 8l3.5-3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></button>",
+      "css": ".ds-chip-ver{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border:none;border-radius:999px;font-family:'Quicksand',sans-serif;font-weight:700;font-size:.85rem;color:#5a3420;background:#f7c6d0;cursor:pointer;transition:background .2s ease}.ds-chip-ver:hover{background:#fff}.ds-chip-ver:focus-visible{outline:3px solid #c2185b;outline-offset:3px}.ds-chev{transition:transform .3s cubic-bezier(.2,.8,.2,1)}.ds-chip-ver[aria-expanded=true] .ds-chev{transform:rotate(180deg)}"
+    },
+    {
+      "name": "Bilhete de menu",
+      "kind": "card",
+      "refersTo": "menu-bilhete",
+      "description": "Menu de festa como bilhete com picotado, sobre a folha framboesa.",
+      "html": "<div class=\"ds-folha-framboesa\"><article class=\"ds-bilhete\"><header class=\"ds-bilhete-head\"><h3>Menu 1</h3><span class=\"ds-pessoas\">± 10 pessoas</span></header><ul class=\"ds-itens\"><li><span>12</span> Rissóis de carne</li><li><span>24</span> Panadinhos de frango</li></ul><p class=\"ds-preco\">60€</p></article></div>",
+      "css": ".ds-folha-framboesa{background:#c2185b;padding:32px}.ds-bilhete{max-width:300px;background:#fffaf3;color:#5a3420;border-radius:18px;padding:26px 24px 24px;box-shadow:0 14px 30px rgba(70,8,34,.28);font-family:'Quicksand',sans-serif;transition:transform .3s cubic-bezier(.2,.8,.2,1)}.ds-bilhete:hover{transform:translateY(-4px) rotate(-.6deg)}.ds-bilhete-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.ds-bilhete-head h3{margin:0;font-family:'Shrikhand',cursive;font-weight:400;font-size:1.7rem;line-height:1;color:#c2185b}.ds-pessoas{font-size:.85rem;font-weight:700;background:#f7c6d0;padding:3px 12px;border-radius:999px}.ds-itens{list-style:none;margin:0;padding:0}.ds-itens li{display:flex;gap:12px;padding:4px 0;font-size:.95rem;font-weight:500}.ds-itens span{min-width:26px;text-align:right;font-weight:700;font-variant-numeric:tabular-nums}.ds-preco{position:relative;margin:20px -24px 0;padding:16px 24px 0;border-top:2px dashed rgba(194,24,91,.35);font-family:'Shrikhand',cursive;font-size:2.3rem;line-height:1}.ds-preco::before,.ds-preco::after{content:'';position:absolute;top:-12px;width:22px;height:22px;border-radius:50%;background:#c2185b}.ds-preco::before{left:-11px}.ds-preco::after{right:-11px}"
+    },
+    {
+      "name": "Foto de produto",
+      "kind": "card",
+      "refersTo": "produto-foto",
+      "description": "Moldura 4:3 de foto real sobre a folha chocolate.",
+      "html": "<div class=\"ds-folha-chocolate\"><div class=\"ds-foto\"><div class=\"ds-foto-img\"></div></div></div>",
+      "css": ".ds-folha-chocolate{background:#4a2a1a;padding:32px}.ds-foto{max-width:280px;aspect-ratio:4/3;border-radius:18px;overflow:hidden;background:#5e4234;box-shadow:0 14px 30px rgba(20,8,2,.3)}.ds-foto-img{width:100%;height:100%;background:linear-gradient(135deg,#f7c6d0,#fff1df);transition:transform .6s cubic-bezier(.2,.8,.2,1)}.ds-foto:hover .ds-foto-img{transform:scale(1.05)}"
+    },
+    {
+      "name": "Navegação",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Cabeçalho fixo nas cores da marca com sublinhado rosa no link ativo.",
+      "html": "<header class=\"ds-header\"><nav class=\"ds-nav\"><a href=\"#\" class=\"ativo\">Sobre</a><a href=\"#\">Menus</a><a href=\"#\">Produtos</a><a href=\"#\">Ocasiões</a></nav></header>",
+      "css": ".ds-header{background:rgba(255,248,240,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(90,52,32,.1);padding:12px 24px}.ds-nav{display:flex;gap:24px;font-family:'Quicksand',sans-serif}.ds-nav a{position:relative;padding:4px 0;font-weight:600;color:#5a3420;text-decoration:none}.ds-nav a::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:#e79aac;transform:scaleX(0);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-nav a:hover::after,.ds-nav a.ativo::after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:3px solid #c2185b;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Folha com festão",
+      "kind": "custom",
+      "description": "Secção de cor inteira cuja borda inferior recortada cai sobre a seguinte.",
+      "html": "<section class=\"ds-folha\" style=\"--bg:#f7c6d0\"><h2>Menus para festas</h2></section><section class=\"ds-folha\" style=\"--bg:#c2185b;color:#fff\"><h2>Bolos, doces e salgados</h2></section>",
+      "css": ".ds-folha{position:relative;background:var(--bg);color:#5a3420;padding:44px 24px;text-align:center}.ds-folha h2{margin:0;font-family:'Shrikhand',cursive;font-weight:400;font-size:2rem;line-height:1.1}.ds-folha::after{content:'';position:absolute;left:0;right:0;top:100%;height:22px;z-index:1;background:radial-gradient(circle at 50% 0,var(--bg) 21.5px,transparent 22px) 0 0/44px 22px repeat-x}"
+    },
+    {
+      "name": "Bandeirolas",
+      "kind": "custom",
+      "description": "Fio de flâmulas no topo de uma folha; desdobram ao entrar e baloiçam.",
+      "html": "<div class=\"ds-band-wrap\"><svg class=\"ds-band\" viewBox=\"0 0 600 110\" aria-hidden=\"true\"><path d=\"M-10 4Q300 56 610 4\" fill=\"none\" stroke=\"#5a3420\" stroke-width=\"3\"/><path class=\"f\" style=\"--i:0\" d=\"M9 11L77 11L43 83Z\" fill=\"#d6336c\"/><path class=\"f\" style=\"--i:1\" d=\"M95 22L163 22L129 94Z\" fill=\"#fff1df\"/><path class=\"f\" style=\"--i:2\" d=\"M180 28L248 28L214 100Z\" fill=\"#5a3420\"/><path class=\"f\" style=\"--i:3\" d=\"M266 30L334 30L300 102Z\" fill=\"#f7c6d0\"/><path class=\"f\" style=\"--i:4\" d=\"M352 28L420 28L386 100Z\" fill=\"#9ed9c4\"/><path class=\"f\" style=\"--i:5\" d=\"M437 22L505 22L471 94Z\" fill=\"#f2b134\"/><path class=\"f\" style=\"--i:6\" d=\"M523 11L591 11L557 83Z\" fill=\"#d6336c\"/></svg></div>",
+      "css": ".ds-band-wrap{background:#fde3ea;padding-bottom:40px}.ds-band{display:block;width:100%;height:auto;overflow:visible}.ds-band .f{transform-box:fill-box;transform-origin:50% 0;filter:drop-shadow(0 4px 3px rgba(90,52,32,.18))}@media (prefers-reduced-motion:no-preference){.ds-band .f{animation:ds-bandeira .9s cubic-bezier(.2,.8,.2,1) calc(var(--i)*55ms) both,ds-balanco 5s ease-in-out calc(.9s + var(--i)*55ms) infinite}}@keyframes ds-bandeira{0%{transform:scaleY(0)}60%{transform:scaleY(1.06) rotate(5deg)}100%{transform:scaleY(1)}}@keyframes ds-balanco{0%,100%{transform:rotate(0)}25%{transform:rotate(3deg)}75%{transform:rotate(-3deg)}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Dia de Festa",
+    "overview": "A página é uma festa a ser montada. Cada secção é uma folha inteira de papel de festa com cor própria, inundada de margem a margem, e a borda inferior de cada folha é recortada em festão e cai sobre a seguinte. Um fio de bandeirolas atravessa o topo do hero e volta a aparecer em \"Como encomendar\"; confettis caem devagar no hero. Nada flutua em caixas brancas sobre um fundo creme: a cor da secção é o chão, e só os bilhetes dos menus e as fotos assentam sobre ela.\n\nO registo é caloroso, caseiro e alegre, nunca frio ou sofisticado. A tipografia junta uma display gorda e redonda (Shrikhand) para títulos e números, e uma sans arredondada (Quicksand) para tudo o resto. As fotos reais dos produtos são a prova; o sistema emoldura-as à mesma escala e não lhes faz concorrência.\n\nO movimento faz parte do mundo: cada folha chega com a cor e a tinta da anterior e assenta na sua ao entrar no ecrã, enquanto o festão de cima desce; as bandeirolas caem e baloiçam. Com movimento reduzido ou sem JS, tudo aparece logo no estado final.",
+    "keyCharacteristics": [
+      "Uma cor inteira por secção, sem cartões a alternar.",
+      "Festão recortado como fronteira entre todas as secções.",
+      "Bandeirolas SVG e confettis como os únicos ornamentos do mundo.",
+      "Shrikhand para títulos e numerais, Quicksand para o resto.",
+      "Cabeçalho e navegação sempre nas cores da marca (creme/castanho/rosa).",
+      "WhatsApp verde como única ação primária, sempre a um toque."
+    ],
+    "rules": [
+      {
+        "name": "The Uma Folha, Uma Cor Rule",
+        "body": "Cada secção tem exatamente uma cor de fundo de margem a margem, definida pelo par fundo/tinta da secção (fundo, tinta, tinta suave). Uma nova secção escolhe uma folha nova e a sua tinta; não coloca um cartão branco por cima de outra cor.",
+        "section": "colors"
+      },
+      {
+        "name": "The Framboesa Reservada Rule",
+        "body": "A framboesa como fundo pertence só aos Menus. É a cor de alarme da página; repeti-la noutra folha gasta-a.",
+        "section": "colors"
+      },
+      {
+        "name": "The Marca no Cabeçalho Rule",
+        "body": "O cabeçalho e a navegação mantêm sempre creme, castanho e rosa da marca, seja qual for a cor da secção por baixo.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shrikhand Só Grita Rule",
+        "body": "Shrikhand é para títulos de secção, o título do hero, nomes de menu e numerais. Nunca para parágrafos, chips, navegação ou botões.",
+        "section": "typography"
+      },
+      {
+        "name": "The Números de Festa Rule",
+        "body": "Preços e números de passo são Shrikhand grande; quantidades em listas são Quicksand 700 com algarismos tabulares, alinhadas à direita.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sombra Tinge-se Rule",
+        "body": "Uma sombra leva o matiz da folha onde cai. Copiar uma sombra para outra secção obriga a retingi-la.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** dar a cada nova secção uma folha de cor inteira e a sua própria tinta e tinta suave, com festão na borda inferior.",
+      "**Do** reservar a framboesa como fundo para os Menus e usá-la como acento de foco, seleção e títulos de bilhete.",
+      "**Do** manter o cabeçalho e a navegação em creme, castanho e rosa da marca.",
+      "**Do** usar o verde WhatsApp (whatsapp) e pílulas para toda a ação de encomenda, com ícone à esquerda.",
+      "**Do** mostrar as fotos de produto à mesma escala, em molduras 4:3 com canto 18px.",
+      "**Do** tingir cada sombra com o matiz da folha onde cai.",
+      "**Do** usar a curva cubic-bezier(0.2, 0.8, 0.2, 1) para movimento e respeitar o movimento reduzido."
+    ],
+    "donts": [
+      "**Don't** pousar cartões brancos a alternar sobre um fundo creme; o template creme com cartões é o que este mundo recusa.",
+      "**Don't** usar Shrikhand em parágrafos, chips, navegação ou botões.",
+      "**Don't** usar amarelo, verde-menta ou rosa bandeira como fundo de secção ou cor de texto; vivem só nas bandeirolas e confettis.",
+      "**Don't** deixar confettis ou ornamentos passar por trás do texto sem clareira.",
+      "**Don't** usar sombras cinzentas neutras ou sombras duras deslocadas."
+    ]
+  }
+}

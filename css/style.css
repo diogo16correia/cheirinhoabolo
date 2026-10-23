@@ -613,7 +613,7 @@ img { max-width: 100%; display: block; }
 
 .produto-card-img {
   border-radius: var(--radius);
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
   background: color-mix(in srgb, var(--ink) 12%, var(--bg));
   box-shadow: 0 14px 30px rgba(20, 8, 2, 0.3);
